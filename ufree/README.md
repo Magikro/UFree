@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Welcome to UFree?, a calendar app that makes planning with friends easy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
