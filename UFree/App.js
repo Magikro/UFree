@@ -1,14 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ActivityIndicator } from 'react-native';
 
 export default function App() {
   console.log("App executed");
   return (
     <View style={styles.container}>
-      <Image style ={styles.logo}
-      fadeDuration={500}
-      source={require("./assets/ufreeFrog.png")}/>
+
+      <ActivityIndicator style={styles.container} size="large" color="pink"/>
       <StatusBar style="auto" />
+
+      <View style={styles.footer}>
+        <Image style ={styles.logo}
+        fadeDuration={500}
+        source={require("./assets/ufreeFrog.png")}/>
+      </View>
     </View>
   );
 }
@@ -24,5 +29,9 @@ const styles = StyleSheet.create({
     width: 275,
     height: 275,
     resizeMode: 'contain',
+  },
+  footer: {
+    flex: 1,
+    justifyContent: 'flex-end',
   },
 });
