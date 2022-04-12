@@ -5,7 +5,9 @@ export default function App() {
   console.log("App executed");
   return (
     <View style={styles.container}>
-      <Image style ={styles.logo} source={require("./assets/ufreeFrog.png")}/>
+      <Image style ={styles.logo}
+      fadeDuration={500}
+      source={require("./assets/ufreeFrog.png")}/>
       <StatusBar style="auto" />
     </View>
   );
